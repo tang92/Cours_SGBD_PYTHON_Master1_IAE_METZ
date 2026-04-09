@@ -1,7 +1,6 @@
 -- ============================================================
 -- Marriott International – Hotel Revenue Analytics
 -- PostgreSQL Schema
--- Master 1 IAE Metz – April 2026
 -- ============================================================
 
 -- Drop tables if they exist (clean slate)
