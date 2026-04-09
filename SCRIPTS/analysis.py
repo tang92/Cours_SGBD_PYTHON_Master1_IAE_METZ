@@ -1,7 +1,6 @@
 # ============================================================
 # Marriott International – Hotel Revenue Analytics
 # Python Analysis Script
-# Master 1 IAE Metz – April 2026
 # ============================================================
 # Requirements: pip install pandas matplotlib seaborn psycopg2-binary
 # ============================================================
@@ -92,7 +91,7 @@ def plot_adr_by_channel(df):
     plt.tight_layout()
     plt.savefig('adr_by_channel.png', dpi=150, bbox_inches='tight')
     plt.show()
-    print("✅ Chart saved: adr_by_channel.png")
+    print("Chart saved: adr_by_channel.png")
 
 
 # ─────────────────────────────────────────
@@ -114,7 +113,7 @@ def plot_monthly_revenue(df):
     plt.tight_layout()
     plt.savefig('monthly_revenue.png', dpi=150, bbox_inches='tight')
     plt.show()
-    print("✅ Chart saved: monthly_revenue.png")
+    print("Chart saved: monthly_revenue.png")
 
 
 # ─────────────────────────────────────────
@@ -139,21 +138,21 @@ def plot_cancellation_by_segment(df_full):
     plt.tight_layout()
     plt.savefig('cancellation_by_segment.png', dpi=150, bbox_inches='tight')
     plt.show()
-    print("✅ Chart saved: cancellation_by_segment.png")
+    print("Chart saved: cancellation_by_segment.png")
 
 
 # ─────────────────────────────────────────
 # MAIN
 # ─────────────────────────────────────────
 if __name__ == '__main__':
-    print("📊 Loading Marriott Revenue Analytics...")
+    print("Loading Marriott Revenue Analytics...")
     print(f"   Looking for data at: {CSV_PATH}\n")
 
     try:
         df_full = pd.read_csv(CSV_PATH)
         df = load_data(CSV_PATH)
 
-        print(f"✅ Dataset loaded: {len(df_full):,} total records | {len(df):,} non-cancelled")
+        print(f"Dataset loaded: {len(df_full):,} total records | {len(df):,} non-cancelled")
         print(f"   Columns: {list(df.columns[:8])} ...\n")
 
         print("── Analysis 1: ADR by booking channel ──")
@@ -165,7 +164,7 @@ if __name__ == '__main__':
         print("── Analysis 3: Cancellation rates ──")
         plot_cancellation_by_segment(df_full)
 
-        print("\n🎉 All analyses complete!")
+        print("\n All analyses complete!")
 
     except FileNotFoundError:
         print("⚠️  CSV file not found.")
