@@ -166,6 +166,6 @@ if __name__ == '__main__':
         print("\n All analyses complete!")
 
     except FileNotFoundError:
-        print("⚠️  CSV file not found.")
-        print("   Download it from: https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand")
-        print("   Place it in the DATA/ folder as 'hotel_bookings.csv'")
+        print("CSV file not found.")
+        print("Download it from: https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand")
+        print("Place it in the DATA/ folder as 'hotel_bookings.csv'")
