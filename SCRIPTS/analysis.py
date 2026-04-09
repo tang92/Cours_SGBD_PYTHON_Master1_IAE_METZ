@@ -15,7 +15,6 @@ import os
 # OPTION A : Load from CSV (Kaggle dataset)
 # ─────────────────────────────────────────
 # Download from: https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand
-# Place hotel_bookings.csv in the DATA/ folder
 
 CSV_PATH = os.path.join(os.path.dirname(__file__), '..', 'DATA', 'hotel_bookings.csv')
 
